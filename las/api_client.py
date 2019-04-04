@@ -111,7 +111,8 @@ class ApiClient(Client):
     def _get_content_type(document_path: str) -> str:
         supported_formats = {
             'jpeg': 'image/jpeg',
-            'pdf': 'application/pdf'
+            'pdf': 'application/pdf',
+            'png': 'image/png'
         }
 
         fp = pathlib.Path(document_path)
